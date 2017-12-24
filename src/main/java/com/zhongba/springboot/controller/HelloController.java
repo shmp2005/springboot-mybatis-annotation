@@ -21,7 +21,7 @@ public class HelloController {
     }
 
     @GetMapping("/users/{id}")
-    public User getUser(@PathVariable("id") long id) {
+    public User getUser(@PathVariable long id) {
         User user = userMapper.getUser(id);
         return user;
     }
