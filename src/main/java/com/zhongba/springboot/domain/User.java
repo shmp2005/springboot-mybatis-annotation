@@ -1,14 +1,13 @@
 package com.zhongba.springboot.domain;
 
 /**
- * @uthor: tangjianhua
- * @ate: 2017/12/8.
+ * @ author: tangjianhua
+ * @ date: 2017/12/8.
  */
 public class User {
-    private Integer id;
+    private int id;
     private String name;
-    private String password;
-    private String phone;
+    private String email;
 
     public Integer getId() {
         return id;
@@ -26,29 +25,21 @@ public class User {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

@@ -1,6 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3307/depot?useUnicode=true&amp;characterEncoding=UTF-8
+    url: jdbc:mysql://localhost/homestead?useSSL=false&useUnicode=true&amp;characterEncoding=UTF-8
     username: root
-    password: User@123
     driver-class-name: com.mysql.jdbc.Driver
